@@ -71,14 +71,48 @@ Opération en cours...
 
 Tu souhaites améliorer ou personnaliser Sendgit ? Voici comment contribuer :
 
-git clone https://github.com/hasprogamer/Sendgit.git
-cd Sendgit
-git checkout -b nom-de-ta-branche
-# Fais tes modifications
-git commit -am "Ajout de nouvelle fonctionnalité"
-git push origin nom-de-ta-branche
+Pour les contributeurs externes (sans accès direct au dépôt) :
 
-Ensuite, ouvre une pull request sur GitHub.
+1. Forke le dépôt Sendgit sur GitHub (bouton "Fork").
 
+2. Clone ton fork sur ta machine :  
+   git clone https://github.com/tonCompte/Sendgit.git
+
+3. Va dans le dossier du projet :  
+   cd Sendgit
+
+4. Crée une nouvelle branche pour ta modification :  
+   git checkout -b ma-nouvelle-fonctionnalite
+
+5. Fais tes modifications et enregistre-les avec un commit :  
+   git commit -am "Description claire de ta modification"
+
+6. Pousse ta branche sur ton fork :  
+   git push origin ma-nouvelle-fonctionnalite
+
+7. Sur GitHub, ouvre une Pull Request depuis ton fork vers le dépôt original.
+
+---
+
+Pour les contributeurs internes (avec accès en écriture) :
+
+1. Clone le dépôt officiel :  
+   git clone https://github.com/hasprogamer/Sendgit.git
+
+2. Va dans le dossier :  
+   cd Sendgit
+
+3. Crée une branche pour tes modifications :  
+   git checkout -b ma-nouvelle-fonctionnalite
+
+4. Modifie, commit, et pousse ta branche :  
+   git commit -am "Description claire de la modification"  
+   git push origin ma-nouvelle-fonctionnalite
+
+5. Ouvre une Pull Request sur GitHub.
+
+---
+
+Les mainteneurs du projet examineront ta Pull Request et pourront l’intégrer si tout est bon.
 ---
 
