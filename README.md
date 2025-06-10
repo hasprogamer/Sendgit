@@ -48,6 +48,15 @@ Ensuite, lance simplement la commande :
 
 ---
 
+## 🔄 Mettre à jour Sendgit
+
+Tu veux récupérer la dernière version ? C’est simple :
+
+bash install.sh
+
+
+---
+
 🚀 Exemple d’utilisation
 
 Fichiers modifiés :
