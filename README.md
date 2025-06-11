@@ -33,30 +33,15 @@ Tu peux maintenant utiliser la commande directement :
    mv github.sh ~/bin/sendgit.sh
 chmod +x ~/bin/sendgit.sh
 
-3. Ajouter ~/bin à ton PATH :  
-<strong> si vous êtes sur bash : </strong>
-
-   echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
-
-4: 
-Créer un alias pour simplifier l’utilisation :  
-   echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc
+3. <strong>Pour Bash</strong>
+echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
+echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc
 source ~/.bashrc
 
-
-<strong> si vous êtes sur zsh:</strong>
-   
+<strong>Pour Zsh</strong>
 echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc
-
-4: Créer un alias pour simplifier l’utilisation :  
-   echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.zshrc
+echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.zshrc
 source ~/.zshrc
-
-
-4. Créer un alias pour simplifier l’utilisation :  
-   echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc
-   source ~/.bashrc
-
 Ensuite, lance simplement la commande :  
    sendgit
 
