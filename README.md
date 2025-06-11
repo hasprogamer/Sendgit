@@ -7,11 +7,11 @@ Sendgit est un outil Bash interactif qui simplifie l’utilisation de Git. Il te
 
 📦 Installation
 
-Sur ordinateur (Linux/macOS)
-
 1. Cloner le dépôt :  
    git clone https://github.com/hasprogamer/Sendgit.git
-   cd Sendgit
+cd Sendgit
+
+<h3>Sur ordinateur (Linux/macOS):</h3>
 
 2. Rendre le script exécutable :  
    chmod +x github.sh
@@ -24,20 +24,33 @@ Tu peux maintenant utiliser la commande directement :
 
 ---
 
-Sur Android (Termux)
+<h3>Sur Android (Termux)</h3>
 
 1. Créer le dossier bin s’il n’existe pas :  
    mkdir -p ~/bin
 
 2. Déplacer le script dans ce dossier et le rendre exécutable :  
    mv github.sh ~/bin/sendgit.sh
-   chmod +x ~/bin/sendgit.sh
+chmod +x ~/bin/sendgit.sh
 
-3. Ajouter ~/bin à ton PATH si ce n’est pas déjà fait :  
+3. Ajouter ~/bin à ton PATH :  
+<strong> si vous êtes sur bash : </strong>
    echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
-   source ~/.bashrc
 
-   (Si tu utilises zsh, remplace .bashrc par .zshrc.)
+4: 
+Créer un alias pour simplifier l’utilisation :  
+   echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc
+source ~/.bashrc
+
+
+<strong> si vous êtes sur zsh:</strong>
+   
+echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc
+
+4: Créer un alias pour simplifier l’utilisation :  
+   echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.zshrc
+source ~/.zshrc
+
 
 4. Créer un alias pour simplifier l’utilisation :  
    echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc
@@ -51,7 +64,7 @@ Ensuite, lance simplement la commande :
 ## 🔄 Mettre à jour Sendgit
 
 Tu veux récupérer la dernière version ? C’est simple :
-
+cd Sendgit
 bash install.sh
 
 
