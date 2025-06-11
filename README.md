@@ -35,6 +35,7 @@ chmod +x ~/bin/sendgit.sh
 
 3. Ajouter ~/bin à ton PATH :  
 <strong> si vous êtes sur bash : </strong>
+
    echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
 
 4: 
