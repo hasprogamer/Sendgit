@@ -5,10 +5,10 @@ git status -s
 sleep 1
 
 echo "Quel est le message du commit ?"
-read commit
+read -r commit
 
 echo "Quel fichier voulez-vous envoyer ? (écris * pour tout envoyer, sinon le nom du fichier)"
-read name
+read -r name
 sleep 1
 
 echo "Sur quelle branche voulez-vous pousser ? (laisse vide pour 'main')"
