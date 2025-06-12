@@ -39,7 +39,7 @@ echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc<br>
 echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc<br>
 source ~/.bashrc
 
-<strong>Pour Zsh</strong><br>
+<strong>Pour Zsh(par défaut sur termux)</strong><br>
 echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc<br>
 echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.zshrc<br>
 source ~/.zshrc<br>
