@@ -1,90 +1,90 @@
 # 🌀 Sendgit
 
-Sendgit est un outil Bash interactif qui simplifie l’utilisation de Git. Il te guide pas à pas pour ajouter, committer et pousser tes fichiers vers n’importe quelle branche d’un dépôt GitHub.
+Sendgit is an interactive Bash tool that simplifies using Git. It guides you step by step to add, commit, and push your files to any branch of a GitHub repository.
 
-### 🚀 Fonctions disponibles
+### 🚀 Available Features
 
-**1. Envoyer des modifications sur GitHub**  
-- Ajout de fichiers  
-- Commit avec message personnalisé  
-- Push vers une branche au choix  
+**1. Send changes to GitHub**  
+- Add files  
+- Commit with a custom message  
+- Push to any branch  
 
-**2. Récupérer les dernières modifications (pull)**
+**2. Pull the latest changes**
 
-**3. Afficher l’historique complet des commits** (`git log`)
+**3. Show the complete commit history** (`git log`)
 
-**4. Afficher un résumé des commits** (`git log --oneline`)
+**4. Show a summary of commits** (`git log --oneline`)
 
-**5. Restaurer un fichier supprimé/modifié**  
-- À partir de n’importe quel commit
+**5. Restore a deleted/modified file**  
+- From any commit
 
-**6. Changer de branche Git facilement**
+**6. Easily switch Git branches**
 
 ---
 
 ## 📦 Installation
 
-### Sur ordinateur (Linux/macOS) :
+### On Desktop (Linux/macOS):
 
-1. Cloner le dépôt :
+1. Clone the repository:
     ```bash
     git clone https://github.com/hasprogamer/Sendgit.git
     cd Sendgit
     ```
-2. Rendre le script exécutable :
+2. Make the script executable:
     ```bash
     chmod +x github.sh
     ```
-3. Déplacer le script dans `/usr/local/bin` pour un accès global :
+3. Move the script to `/usr/local/bin` for global access:
     ```bash
     sudo mv github.sh /usr/local/bin/sendgit
     ```
-4. Tu peux maintenant utiliser la commande directement :
+4. Now you can use the command directly:
     ```bash
     sendgit
     ```
 
 ---
 
-### Sur Android (Termux)
+### On Android (Termux)
 
-1. Créer le dossier `bin` :
+1. Create the `bin` folder:
     ```bash
     mkdir -p ~/bin
     ```
 
-2. Déplacer le script dans ce dossier et le rendre exécutable :
+2. Move the script to this folder and make it executable:
     ```bash
     mv github.sh ~/bin/sendgit.sh
     chmod +x ~/bin/sendgit.sh
     ```
 
-3. Ajouter `~/bin` à ton PATH :
+3. Add `~/bin` to your PATH:
 
-**Pour Bash**  
+**For Bash**
     ```bash
     echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
     echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc
     source ~/.bashrc
     ```
 
-**Pour Zsh (par défaut sur Termux)**  
+**For Zsh (default on Termux)**
     ```bash
     echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc
     echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.zshrc
     source ~/.zshrc
     ```
 
-Ensuite, lance simplement la commande :
+Then, just use the command:
 ```bash
 sendgit
 ```
 
 ---
 
-### 🔄 Mettre à jour Sendgit
+### 🔄 Update Sendgit
 
-Tu veux récupérer la dernière version ? C’est simple :
+Want to get the latest version? It’s simple:
 ```bash
 cd Sendgit
 bash install.sh
@@ -92,80 +92,81 @@ bash install.sh
 
 ---
 
-### 🚀 Exemple d’utilisation
+### 🚀 Example Usage
 
 ```
-Fichiers modifiés :
+Modified files:
  M index.html
  M script.sh
 
-Quel est le message du commit ?  
-> du script
+What is the commit message?  
+> script update
 
-Quel fichier voulez-vous envoyer ? (écrivez * pour tout envoyer sinon le nom du fichier)  
+Which file do you want to send? (type * to send all, otherwise specify the file name)  
 > *
 
-Sur quelle branche voulez-vous pousser ? (laisser vide pour 'main')  
+Which branch do you want to push to? (leave empty for 'main')  
 > main
 
-Opération en cours...
+Operation in progress...
 ```
 
 ---
 
-## 🛠️ Contribution
+## 🛠️ Contributing
 
-Tu souhaites améliorer ou personnaliser Sendgit ? Voici comment contribuer :
+Want to improve or customize Sendgit? Here’s how to contribute:
 
-### Pour les contributeurs externes (sans accès direct au dépôt) :
+### For external contributors (no direct repo access):
 
-1. Forke le dépôt Sendgit sur GitHub (bouton "Fork").
-2. Clone ton fork sur ta machine :
+1. Fork the Sendgit repository on GitHub (click "Fork").
+2. Clone your fork to your machine:
     ```bash
-    git clone https://github.com/tonCompte/Sendgit.git
+    git clone https://github.com/yourUsername/Sendgit.git
     ```
-3. Va dans le dossier du projet :
+3. Go to the project folder:
     ```bash
     cd Sendgit
     ```
-4. Crée une nouvelle branche pour ta modification :
+4. Create a new branch for your changes:
     ```bash
-    git checkout -b ma-nouvelle-fonctionnalite
+    git checkout -b my-new-feature
     ```
-5. Fais tes modifications et enregistre-les avec un commit :
+5. Make your changes and commit them:
     ```bash
-    git commit -am "Description claire de ta modification"
+    git commit -am "Clear description of your changes"
     ```
-6. Pousse ta branche sur ton fork :
+6. Push your branch to your fork:
     ```bash
-    git push origin ma-nouvelle-fonctionnalite
+    git push origin my-new-feature
     ```
-7. Sur GitHub, ouvre une Pull Request depuis ton fork vers le dépôt original.
+7. On GitHub, open a Pull Request from your fork to the original repository.
 
 ---
 
-### Pour les contributeurs internes (avec accès en écriture) :
+### For internal contributors (with write access):
 
-1. Clone le dépôt officiel :
+1. Clone the official repository:
     ```bash
     git clone https://github.com/hasprogamer/Sendgit.git
     ```
-2. Va dans le dossier :
+2. Go to the folder:
     ```bash
     cd Sendgit
     ```
-3. Crée une branche pour tes modifications :
+3. Create a branch for your changes:
     ```bash
-    git checkout -b ma-nouvelle-fonctionnalite
+    git checkout -b my-new-feature
     ```
-4. Modifie, commit, et pousse ta branche :
+4. Edit, commit, and push your branch:
     ```bash
-    git commit -am "Description claire de la modification"
-    git push origin ma-nouvelle-fonctionnalite
+    git commit -am "Clear description of the change"
+    git push origin my-new-feature
     ```
-5. Ouvre une Pull Request sur GitHub.
+5. Open a Pull Request on GitHub.
 
 ---
 
-Les mainteneurs du projet examineront ta Pull Request et pourront l’intégrer si tout est bon.
+Project maintainers will review your Pull Request and may merge it if everything looks good.
+
 ---
