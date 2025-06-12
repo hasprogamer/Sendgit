@@ -14,4 +14,4 @@ jobs:
         run: chmod +x install.sh
 
       - name: Lancer le script d'installation
-        run: ./install.sh
+        run: ./install.sh 2
