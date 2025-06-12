@@ -33,33 +33,33 @@ Sendgit est un outil Bash interactif qui simplifie l’utilisation de Git. Il te
 <h3>Sur ordinateur (Linux/macOS):</h3>
 
 2. Rendre le script exécutable :  
-   chmod +x github.sh
+   <code>chmod +x github.sh</code>
 
 3. Déplacer le script dans /usr/local/bin pour un accès global :  
-   sudo mv github.sh /usr/local/bin/sendgit
+   <code>sudo mv github.sh /usr/local/bin/sendgit</code
 
 Tu peux maintenant utiliser la commande directement :  
-   sendgit
+   <code>sendgit</code
 
 ---
 
 <h3>Sur Android (Termux)</h3>
 
 1. Créer le dossier bin s’il n’existe pas :  
-   mkdir -p ~/bin
+   <code>mkdir -p ~/bin</code>
 
 2. Déplacer le script dans ce dossier et le rendre exécutable :  
-   mv github.sh ~/bin/sendgit.sh<br>
-chmod +x ~/bin/sendgit.sh
+   <code>mv github.sh ~/bin/sendgit.sh<br></code>
+<code>chmod +x ~/bin/sendgit.sh</code>
 
 3.Ajouter ~/bin à ton PATH :
  <strong>Pour Bash</strong><br>
-echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc<br>
-echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc<br>
-source ~/.bashrc
+<code>echo 'export PATH=$HOME/bin:$PATH' >></code> <code>~/.bashrc<br></code>
+<code>echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc<br></code>
+<code>source ~/.bashrc</code>
 
 <strong>Pour Zsh(par défaut sur termux)</strong><br>
-echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc<br>
+<code>echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc<br></code>
 echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.zshrc<br>
 source ~/.zshrc<br>
 Ensuite, lance simplement la commande :  <br>
