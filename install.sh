@@ -2,10 +2,16 @@
 
 echo "🔧 Installation ou mise à jour de Sendgit"
 echo ""
-echo "Tu es sur quel type de système ?"
-echo "1) PC (Linux/macOS)"
-echo "2) Android (Termux)"
-read -p "👉 Tape 1 ou 2 : " choice
+
+# Déterminer le choix : argument ou prompt
+if [[ "$1" == "1" || "$1" == "2" ]]; then
+    choice=$1
+else
+    echo "Tu es sur quel type de système ?"
+    echo "1) PC (Linux/macOS)"
+    echo "2) Android (Termux)"
+    read -p "👉 Tape 1 ou 2 : " choice
+fi
 
 if [ "$choice" == "1" ]; then
     echo ""
