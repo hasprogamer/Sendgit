@@ -3,6 +3,25 @@
 
 Sendgit est un outil Bash interactif qui simplifie l’utilisation de Git. Il te guide pas à pas pour ajouter, committer et pousser tes fichiers vers n’importe quelle branche d’un dépôt GitHub.
 
+<h3>🚀 Fonctions disponibles</h3>
+
+<strong>1. Envoyer des modifications sur GitHub</strong><br>
+- Ajout de fichiers<br>
+- Commit avec message personnalisé<br>
+- Push vers une branche au choix<br><br>
+
+<strong>2. Récupérer les dernières modifications (pull)</strong><br><br>
+
+<strong>3. Afficher l’historique complet des commits</strong> (<code>git log</code>)<br><br>
+
+<strong>4. Afficher un résumé des commits</strong> (<code>git log --oneline</code>)<br><br>
+
+<strong>5. Restaurer un fichier supprimé/modifié</strong><br>
+- À partir de n’importe quel commit<br><br>
+
+<strong>6. Changer de branche Git facilement</strong><br><br>
+
+
 ---
 
 📦 Installation
