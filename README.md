@@ -48,7 +48,7 @@ Tu peux maintenant utiliser la commande directement :
 1. Créer le dossier bin s’il n’existe pas :  
    <code>mkdir -p ~/bin</code>
 
-2. Déplacer le script dans ce dossier et le rendre exécutable :  
+2. Déplacer le script dans ce dossier et le rendre exécutable :  <br>
    <code>mv github.sh ~/bin/sendgit.sh<br></code>
 <code>chmod +x ~/bin/sendgit.sh</code>
 
