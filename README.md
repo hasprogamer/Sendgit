@@ -54,7 +54,7 @@ Tu peux maintenant utiliser la commande directement :
 
 3.Ajouter ~/bin à ton PATH :
  <strong>Pour Bash</strong><br>
-<code>echo 'export PATH=$HOME/bin:$PATH' >></code> <code>~/.bashrc<br></code>
+<code>echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc<br></code>
 <code>echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc<br></code>
 <code>source ~/.bashrc</code>
 
