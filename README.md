@@ -74,7 +74,7 @@ Ensuite, lance simplement la commande :  <br>
 
 ---
 
-## 🔄 Mettre à jour Sendgit
+<h3>🔄 Mettre à jour Sendgit</h3>
 
 Tu veux récupérer la dernière version ? C’est simple :
 cd Sendgit<br>
@@ -83,7 +83,7 @@ bash install.sh
 
 ---
 
-🚀 Exemple d’utilisation
+<h3>🚀 Exemple d’utilisation</h3>
 
 Fichiers modifiés :
  M index.html
