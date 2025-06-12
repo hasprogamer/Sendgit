@@ -39,7 +39,7 @@ Sendgit est un outil Bash interactif qui simplifie l’utilisation de Git. Il te
    <code>sudo mv github.sh /usr/local/bin/sendgit</code
 
 Tu peux maintenant utiliser la commande directement :  
-   <code>sendgit</code
+   <code>sendgit</code>
 
 ---
 
