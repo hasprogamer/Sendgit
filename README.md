@@ -54,16 +54,16 @@ Tu peux maintenant utiliser la commande directement :
 
 3.Ajouter ~/bin à ton PATH :
  <strong>Pour Bash</strong><br>
-<code>echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc<br></code>
-<code>echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc<br></code>
-<code>source ~/.bashrc</code>
+<code>echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc<br></code><br>
+<code>echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc<br></code><br>
+<code>source ~/.bashrc</code><br>
 
 <strong>Pour Zsh(par défaut sur termux)</strong><br>
-<code>echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc<br></code>
-echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.zshrc<br>
-source ~/.zshrc<br>
+<code>echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc<br></code><br>
+<code>echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.zshrc<code><br>
+<code>source ~/.zshrc</code><br>
 Ensuite, lance simplement la commande :  <br>
-   sendgit
+   <code>sendgit</code>
 
 ---
 
