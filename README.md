@@ -30,18 +30,18 @@ Tu peux maintenant utiliser la commande directement :
    mkdir -p ~/bin
 
 2. Déplacer le script dans ce dossier et le rendre exécutable :  
-   mv github.sh ~/bin/sendgit.sh
+   mv github.sh ~/bin/sendgit.sh<br>
 chmod +x ~/bin/sendgit.sh
 
 3.Ajouter ~/bin à ton PATH :
  <strong>Pour Bash</strong><br>
-echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
-echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc
+echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc<br>
+echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc<br>
 source ~/.bashrc
 
 <strong>Pour Zsh</strong><br>
-echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc
-echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.zshrc
+echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc<br>
+echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.zshrc<br>
 source ~/.zshrc
 Ensuite, lance simplement la commande :  
    sendgit
@@ -51,7 +51,7 @@ Ensuite, lance simplement la commande :
 ## 🔄 Mettre à jour Sendgit
 
 Tu veux récupérer la dernière version ? C’est simple :
-cd Sendgit
+cd Sendgit<br>
 bash install.sh
 
 
