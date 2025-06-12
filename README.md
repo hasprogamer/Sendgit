@@ -45,7 +45,7 @@ Tu peux maintenant utiliser la commande directement :
 
 <h3>Sur Android (Termux)</h3>
 
-1. Créer le dossier bin s’il n’existe pas :  
+1. Créer le dossier bin :  
    <code>mkdir -p ~/bin</code>
 
 2. Déplacer le script dans ce dossier et le rendre exécutable :  <br>
@@ -56,13 +56,19 @@ Tu peux maintenant utiliser la commande directement :
  <strong>Pour Bash</strong><br>
 
 <code>echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc<br></code><br>
+
 <code>echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.bashrc<br></code><br>
+
 <code>source ~/.bashrc</code><br>
 
 <strong>Pour Zsh(par défaut sur termux)</strong><br>
+
 <code>echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc<br></code><br>
+
 <code>echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.zshrc<code><br>
+
 <code>source ~/.zshrc</code><br>
+
 Ensuite, lance simplement la commande :  <br>
    <code>sendgit</code>
 
