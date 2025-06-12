@@ -42,8 +42,8 @@ source ~/.bashrc
 <strong>Pour Zsh</strong><br>
 echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc<br>
 echo 'alias sendgit="bash ~/bin/sendgit.sh"' >> ~/.zshrc<br>
-source ~/.zshrc
-Ensuite, lance simplement la commande :  
+source ~/.zshrc<br>
+Ensuite, lance simplement la commande :  <br>
    sendgit
 
 ---
