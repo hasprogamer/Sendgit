@@ -9,7 +9,7 @@ Sendgit est un outil Bash interactif qui simplifie l’utilisation de Git. Il te
 
 1. Cloner le dépôt :  
    git clone https://github.com/hasprogamer/Sendgit.git
-cd Sendgit
+<br>cd Sendgit
 
 <h3>Sur ordinateur (Linux/macOS):</h3>
 
