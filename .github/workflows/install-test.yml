@@ -1,0 +1,17 @@
+name: Test Installateur Sendgit
+
+on: [push, pull_request]
+
+jobs:
+  install_test:
+    name: Test installation du script
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cloner le dépôt
+        uses: actions/checkout@v3
+
+      - name: Rendre install.sh exécutable
+        run: chmod +x install.sh
+
+      - name: Lancer le script d'installation
+        run: ./install.sh
