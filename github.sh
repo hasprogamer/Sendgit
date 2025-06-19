@@ -6,6 +6,11 @@ set -euo pipefail
 # Réglage du séparateur de champs pour éviter les erreurs avec les espaces et retours à la ligne
 IFS=$'\n\t'
 
+if ! command -v git &> /dev/null; then
+    echo "❌ Git n'est pas installé. Veuillez l'installer avant d'utiliser Sendgit."
+    exit 1
+fi
+
 echo "Bienvenue sur Sendgit ! Que voulez-vous faire ?"
 echo "1: Envoyer mes modifications sur GitHub"
 echo "2: Récupérer les modifications"
